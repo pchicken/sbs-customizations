@@ -5,7 +5,7 @@ userstyles and userscripts for sbs frontends
 
 ### haloopdy frontend (smilebasicsource.com)
 files in haloopdy/ are compatible.  
-the userjs and usercss settings can be found in `User tab of sidebar -> Developer Options`
+the userjs and usercss settings can be found in `User tab of sidebar -> Developer Options`  
 i think i'll make a pretty selector for these later.
 
 ### 12 frontend (smilebasicsource.com/12)
