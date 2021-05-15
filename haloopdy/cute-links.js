@@ -4,9 +4,9 @@ Commands.cute = new Command(
 		/* remove cmd part and add padding at end */
 		parts = [...parts.slice(1), ""];
 		/* the aforementioned padding is because this var could be -1
-		// you can mark where to stop parsing urls with a / */
-		let split = parts.indexOf("/");
-		/* output in messagebox */
+		// you can mark where to stop parsing urls with , */
+		const split = parts.indexOf(",");
+		/* output to messagebox */
 		CommandSystem.commandinput.value = [
 			/* only process the urls */
 			...parts.slice(0, split).map(
@@ -15,7 +15,7 @@ Commands.cute = new Command(
 					u +
 					"[" +
 					decodeURIComponent(u.replace(/^http(s|):\/\//, ""))
-						/*if i was sitting in nim this would be turned into a macro*/
+						/* if i was sitting in nim this would be turned into a macro */
 						.replace("derpibooru.org/search?q=", "derpi:")
 						.replace("derpibooru.org/images/", "derpi:")
 						.replace("www.youtube.com/watch?v=", "yt:")
