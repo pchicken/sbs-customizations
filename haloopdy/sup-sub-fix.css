@@ -1,0 +1,13 @@
+sub, sup {
+  font-size: 82%;
+  line-height: initial;
+  position: initial;
+}
+sub {vertical-align: sub;}
+sup {vertical-align: super;}
+.tableContainer {
+    overflow-x: auto;
+    max-width: 100%;
+    margin: 0.2em 0;
+}
+pre {font-size: 0.875em !important; padding: 0.5em !important}
