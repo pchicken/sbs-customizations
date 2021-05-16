@@ -11,8 +11,7 @@ Commands.img = new Command(
 			/* only process the urls */
 			...parts.slice(0, split).map((u) => {
 				if (u.startsWith("https://derpicdn.net/img/")) {
-					const split = u.split("/");
-					const id = split[split.length - 2];
+					const id = u.match(/(?<=(\d+\/){3})\d+/)[0];
 					return `!${u}{https://derpibooru.org/images/${id}[derpi:${id}]}`;
 				} else {
 					return "!" + u;
